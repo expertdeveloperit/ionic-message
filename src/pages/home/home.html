@@ -1,4 +1,4 @@
-<ion-header>
+<!-- <ion-header>
   <ion-navbar>
     <ion-title>
       Ionic Blank
@@ -11,4 +11,509 @@
   <p>
     If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
   </p>
-</ion-content>
+</ion-content> -->
+
+<div class="app-main-views-wrapper">
+  <div class="app-view-header-wrapper">
+    <div class="status-bar-placeholder"></div>
+    <div class="header-button-wrapper"><a routerLink="/terms-n-policy" class="buttons more w-inline-block"></a>
+      <div class="logo-text">msg</div><a routerLink="/search" class="buttons search w-inline-block"></a></div>
+    <div class="stack-wrapper">
+      <div class="stack-1"></div>
+      <div class="stack-2"></div>
+    </div>
+  </div>
+  <!--
+    The feed is separated into 2 sections: recent & contacts.
+    the recent section has the messages list.
+    the contact section has the contacts list.
+    when you message someone from the contact list it is automatically
+    moved to the message list.
+    when you clear the history of a conversation the person is automatically moved out
+    from the message list to the contact list.
+  -->
+  <div class="app-view-body">
+    <div class="message-list-wrapper">
+      <div class="section-wrapper">
+        <div class="section-title">Recent</div>
+        <ul class="message-list w-list-unstyled">
+
+          <!--message component-->
+          <li class="list-item">
+
+            <!--message failed thumbnail-->
+            <div class="contact-thumbnail">
+              <div class="icon-n-name-wrapper">
+                <div class="icon failed"></div>
+                <div class="name-and-time-wrapper">
+                  <div class="name-text">Hyaad Decossard</div>
+                  <div class="time-text">tap to continue</div>
+                </div>
+              </div>
+            </div>
+
+            <!--
+              message failed template
+              slide up when you click on the message thumbnail
+            -->
+            <div class="failed-message-view">
+              <div class="message-view-header">
+                <div class="buttons dark historic"></div>
+                <div class="text-block">Hyaad Decossard</div>
+                <div class="buttons dark close"></div>
+              </div>
+              <div class="message-view-body">
+                <div class="message-text-wrapper">
+                  <div class="message">
+                    <p class="message-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor in.</p>
+                    <div class="date-text">July 12, 12:45 PM</div>
+                  </div>
+                  <div class="message">
+                    <div class="sent-message-wrapper">
+                      <div class="icon failed"></div>
+                      <div class="name-and-time-wrapper">
+                        <div class="name-text">Failed</div>
+                        <div class="time-text">tap to retry</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+             <!--
+              message history template
+              slide up when you click on the clock icon
+            -->
+            <div class="message-historic-view-wrapper">
+              <div class="message-view-header">
+                <div class="buttons dark clean"></div>
+                <div class="text-block">Hyaad Decossard</div>
+                <div class="buttons dark close"></div>
+              </div>
+              <div class="message-view-body">
+                <div class="message-historique-list-wrapper">
+                  <ul class="message-historic-list w-list-unstyled">
+                    <li class="past-message-wrapper">
+                      <div class="past-message">
+                        <div class="timeline-icon-wrapper">
+                          <div class="line-timeline"></div>
+                          <div class="small-icon checkbox"></div>
+                          <div class="line-timeline"></div>
+                        </div>
+                        <div class="name-and-time-wrapper timeline">
+                          <div class="name-text">12:20 PM</div>
+                          <div class="time-text">jul 12, 2018</div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="past-message-wrapper">
+                      <div class="past-message">
+                        <div class="timeline-icon-wrapper">
+                          <div class="line-timeline"></div>
+                          <div class="small-icon check"></div>
+                          <div class="line-timeline"></div>
+                        </div>
+                        <div class="name-and-time-wrapper timeline">
+                          <div class="name-text">12:11PM</div>
+                          <div class="time-text">jul 12, 2018</div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!--message component-->
+          <li class="list-item">
+
+             <!--
+              message delivered thumbnail
+            -->
+            <div class="contact-thumbnail">
+              <div class="icon-n-name-wrapper">
+                <div class="icon send"></div>
+                <div class="name-and-time-wrapper">
+                  <div class="name-text">Hyaad Decossard</div>
+                  <div class="time-text">Sent 12:20 PM</div>
+                </div>
+              </div>
+            </div>
+
+             <!--
+              message delivered template
+              slide up when you click on the message thumbnail
+            -->
+            <div class="delivered-message-view">
+              <div class="message-view-header">
+                <div class="buttons dark historic"></div>
+                <div class="text-block">Hyaad Decossard</div>
+                <div class="buttons dark close"></div>
+              </div>
+              <div class="message-view-body">
+                <div class="message-text-wrapper">
+                  <div class="message">
+                    <p class="message-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor in.</p>
+                    <div class="date-text">July 12, 12:45 PM</div>
+                  </div>
+                  <div class="message">
+                    <div class="sent-message-wrapper">
+                      <div class="icon new-message">
+                        <div class="div-block"></div>
+                      </div>
+                      <div class="name-and-time-wrapper">
+                        <div class="name-text">Delivered</div>
+                        <div class="time-text">JULY 12, 12:45 PM</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+             <!--
+              message historic template
+              slide up when you click on the clock icon
+            -->
+            <div class="message-historic-view-wrapper">
+              <div class="message-view-header">
+                <div class="buttons dark clean"></div>
+                <div class="text-block">Hyaad Decossard</div>
+                <div class="buttons dark close"></div>
+              </div>
+              <div class="message-view-body">
+                <div class="message-historique-list-wrapper">
+                  <ul class="message-historic-list w-list-unstyled">
+                    <li class="past-message-wrapper">
+                      <div class="past-message">
+                        <div class="timeline-icon-wrapper">
+                          <div class="line-timeline"></div>
+                          <div class="small-icon checkbox"></div>
+                          <div class="line-timeline"></div>
+                        </div>
+                        <div class="name-and-time-wrapper timeline">
+                          <div class="name-text">12:20 PM</div>
+                          <div class="time-text">jul 12, 2018</div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="past-message-wrapper">
+                      <div class="past-message">
+                        <div class="timeline-icon-wrapper">
+                          <div class="line-timeline"></div>
+                          <div class="small-icon check"></div>
+                          <div class="line-timeline"></div>
+                        </div>
+                        <div class="name-and-time-wrapper timeline">
+                          <div class="name-text">12:11PM</div>
+                          <div class="time-text">jul 12, 2018</div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!--message component-->
+          <li class="list-item">
+
+              <!--
+                 message read thumbnail
+               -->
+            <div class="contact-thumbnail">
+              <div class="icon-n-name-wrapper">
+                <div class="icon read"></div>
+                <div class="name-and-time-wrapper">
+                  <div class="name-text">Hyaad Decossard</div>
+                  <div class="time-text">Read 12:20 PM</div>
+                </div>
+              </div>
+            </div>
+
+             <!--
+              message read template
+              slide up when you click on the message thumbnail
+            -->
+            <div class="read-message-view">
+              <div class="message-view-header">
+                <div class="buttons dark historic"></div>
+                <div class="text-block">Hyaad Decossard</div>
+                <div class="buttons dark close"></div>
+              </div>
+              <div class="message-view-body">
+                <div class="message-text-wrapper">
+                  <div class="message">
+                    <p class="message-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor in.</p>
+                    <div class="date-text">July 12, 12:45 PM</div>
+                  </div>
+                  <div class="message">
+                    <div class="sent-message-wrapper">
+                      <div class="icon opened"></div>
+                      <div class="name-and-time-wrapper">
+                        <div class="name-text">open</div>
+                        <div class="time-text">JULY 12, 12:45 PM<br></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+             <!--
+              message historic template
+              slide up when you click on the clock button
+            -->
+            <div class="message-historic-view-wrapper">
+              <div class="message-view-header">
+                <div class="buttons dark clean"></div>
+                <div class="text-block">Hyaad Decossard</div>
+                <div class="buttons dark close"></div>
+              </div>
+              <div class="message-view-body">
+                <div class="message-historique-list-wrapper">
+                  <ul class="message-historic-list w-list-unstyled">
+                    <li class="past-message-wrapper">
+                      <div class="past-message">
+                        <div class="timeline-icon-wrapper">
+                          <div class="line-timeline"></div>
+                          <div class="small-icon checkbox"></div>
+                          <div class="line-timeline"></div>
+                        </div>
+                        <div class="name-and-time-wrapper timeline">
+                          <div class="name-text">12:20 PM</div>
+                          <div class="time-text">jul 12, 2018</div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="past-message-wrapper">
+                      <div class="past-message">
+                        <div class="timeline-icon-wrapper">
+                          <div class="line-timeline"></div>
+                          <div class="small-icon check"></div>
+                          <div class="line-timeline"></div>
+                        </div>
+                        <div class="name-and-time-wrapper timeline">
+                          <div class="name-text">12:11PM</div>
+                          <div class="time-text">jul 12, 2018</div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!--message component-->
+          <li class="list-item">
+
+              <!--
+                 message opened thumbnail
+               -->
+            <div class="contact-thumbnail">
+              <div class="icon-n-name-wrapper">
+                <div class="icon opened"></div>
+                <div class="name-and-time-wrapper">
+                  <div class="name-text">Hyaad Decossard</div>
+                  <div class="time-text">Open 12:20 PM</div>
+                </div>
+              </div>
+            </div>
+
+             <!--
+              message opened template
+              slide up when you click on the message thumbnail
+            -->
+            <div class="open-message-view">
+              <div class="message-view-header">
+                <div class="buttons dark historic"></div>
+                <div class="text-block">Hyaad Decossard</div>
+                <div class="buttons dark close"></div>
+              </div>
+              <div class="message-view-body">
+                <div class="message-text-wrapper">
+                  <div class="message">
+                    <p class="message-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor in.</p>
+                    <div class="date-text">July 12, 12:45 PM</div>
+                  </div>
+                </div>
+              </div>
+              <div class="message-view-footer">
+                <div class="buttons dark media"></div><a href="#" class="link w-button">reply</a></div>
+            </div>
+
+             <!--
+              message historic template
+              slide up when you click on the clock icon
+            -->
+            <div class="message-historic-view-wrapper">
+              <div class="message-view-header">
+                <div class="buttons dark clean"></div>
+                <div class="text-block">Hyaad Decossard</div>
+                <div class="buttons dark close"></div>
+              </div>
+              <div class="message-view-body">
+                <div class="message-historique-list-wrapper">
+                  <ul class="message-historic-list w-list-unstyled">
+                    <li class="past-message-wrapper">
+                      <div class="past-message">
+                        <div class="timeline-icon-wrapper">
+                          <div class="line-timeline"></div>
+                          <div class="small-icon checkbox"></div>
+                          <div class="line-timeline"></div>
+                        </div>
+                        <div class="name-and-time-wrapper timeline">
+                          <div class="name-text">12:20 PM</div>
+                          <div class="time-text">jul 12, 2018</div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="past-message-wrapper">
+                      <div class="past-message">
+                        <div class="timeline-icon-wrapper">
+                          <div class="line-timeline"></div>
+                          <div class="small-icon check"></div>
+                          <div class="line-timeline"></div>
+                        </div>
+                        <div class="name-and-time-wrapper timeline">
+                          <div class="name-text">12:11PM</div>
+                          <div class="time-text">jul 12, 2018</div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!--message component-->
+          <li class="list-item">
+
+             <!--
+              new message thumbnail
+            -->
+            <div class="contact-thumbnail">
+              <div class="icon-n-name-wrapper">
+                <div class="icon new-message">
+                  <div class="div-block"></div>
+                </div>
+                <div class="name-and-time-wrapper">
+                  <div class="name-text">Hyaad Decossard</div>
+                  <div class="time-text">New 12:20 PM</div>
+                </div>
+              </div>
+            </div>
+
+             <!--
+              new message template
+              slide up when you click on the message thumbnail
+            -->
+            <div class="new-message-view">
+              <div class="message-view-header">
+                <div class="buttons dark historic"></div>
+                <div class="text-block">Hyaad Decossard</div>
+                <div class="buttons dark close"></div>
+              </div>
+              <div class="message-view-body">
+                <div class="message-text-wrapper">
+                  <div class="message">
+                    <p class="message-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor in.</p>
+                    <div class="date-text">July 12, 12:45 PM</div>
+                  </div>
+                </div>
+              </div>
+              <div class="message-view-footer">
+                <div class="buttons dark media"></div><a href="#" class="link w-button">reply</a></div>
+            </div>
+
+             <!--
+              new message historic template
+              slide up when you click on the clock icon
+            -->
+            <div class="message-historic-view-wrapper">
+              <div class="message-view-header">
+                <div class="buttons dark clean"></div>
+                <div class="text-block">Hyaad Decossard</div>
+                <div class="buttons dark close"></div>
+              </div>
+              <div class="message-view-body">
+                <div class="message-historique-list-wrapper">
+                  <ul class="message-historic-list w-list-unstyled">
+                    <li class="past-message-wrapper">
+                      <div class="past-message">
+                        <div class="timeline-icon-wrapper">
+                          <div class="line-timeline"></div>
+                          <div class="small-icon checkbox"></div>
+                          <div class="line-timeline"></div>
+                        </div>
+                        <div class="name-and-time-wrapper timeline">
+                          <div class="name-text">12:20 PM</div>
+                          <div class="time-text">jul 12, 2018</div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="past-message-wrapper">
+                      <div class="past-message">
+                        <div class="timeline-icon-wrapper">
+                          <div class="line-timeline"></div>
+                          <div class="small-icon check"></div>
+                          <div class="line-timeline"></div>
+                        </div>
+                        <div class="name-and-time-wrapper timeline">
+                          <div class="name-text">12:11PM</div>
+                          <div class="time-text">jul 12, 2018</div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="section-wrapper">
+        <div class="section-title">Contact</div>
+        <ul class="message-list w-list-unstyled">
+
+           <!--
+              contact is a user
+              tap to open the text editor
+            -->
+          <li class="list-item">
+            <div class="contact-thumbnail">
+              <div class="icon-n-name-wrapper">
+                <div class="icon contact"></div>
+                <div class="name-and-time-wrapper">
+                  <div class="name-text">Hyaad Decossard</div>
+                  <div class="time-text">Tap to reach out</div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!--
+              contact is not a user
+              tap to send an sms invitation
+            -->
+          <li class="list-item">
+            <div class="contact-thumbnail">
+              <div class="icon-n-name-wrapper">
+                <div class="icon invite"></div>
+                <div class="name-and-time-wrapper">
+                  <div class="name-text">Hyaad Decossard</div>
+                  <div class="time-text">Tap to invite</div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
