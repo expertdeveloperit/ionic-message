@@ -4,6 +4,7 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 import { HttpClientModule } from '@angular/common/http';
+import { Contacts } from "@ionic-native/contacts";
 
 
 import { MyApp } from './app.component';
@@ -44,6 +45,7 @@ import { TextEditorPage } from '../pages/text-editor/text-editor';
   providers: [
     StatusBar,
     SplashScreen,
+    Contacts,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
   ]
 })
