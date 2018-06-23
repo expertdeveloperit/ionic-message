@@ -1,0 +1,22 @@
+
+  <div class="app-main-views-wrapper start">
+    <div class="app-view-header-wrapper">
+      <div class="status-bar-placeholder"></div>
+      <div class="header-button-wrapper">
+        <div class="logo-text _2">msg</div><a routerLink="/terms-n-policy" class="buttons legal w-inline-block"></a></div>
+      <div class="stack-wrapper">
+        <div class="stack-1"></div>
+        <div class="stack-2"></div>
+      </div>
+    </div>
+    <div class="app-view-body">
+      <div class="sign-in-block w-form">
+        <form id="email-form" name="email-form" data-name="Email Form" class="sign-in-form">
+          <div class="section-title">enter phone number</div>
+          <div class="phone-number-wrapper"><input type="text" class="sign-in-field country-code w-input" maxlength="256" autofocus="true" name="country-code" data-name="country code" placeholder="+1" id="country-code" required=""><input type="text" class="sign-in-field area-code w-input" maxlength="256" name="area-code" data-name="area code" placeholder="509" id="area-code" required=""><input type="text" class="sign-in-field number w-input" maxlength="256" name="phone-number" data-name="phone number" placeholder="3828967" id="phone-number" required=""></div>
+          <div class="tips">by signing in you agree to our<a (click)="navigate('terms')"> terms and policy</a>.</div>
+          <div class="send-button-wrapper" (click)="authenticate()"><input type="submit" value="Next" data-wait="Please wait..." class="submit-button grey w-button"></div>
+        </form>
+      </div>
+    </div>
+  </div>

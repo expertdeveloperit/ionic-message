@@ -1,0 +1,10 @@
+<div class="app-secondary-views">
+  <div class="secondary-view-header">
+    <div>hyaad decossard</div><a (click)="goBack()" class="buttons dark close filled w-inline-block"></a></div>
+</div>
+<div class="text-editor-body w-form">
+  <!--it should be 160 characters limit text area-->
+  <form id="email-form" name="email-form" data-name="Email Form" class="text-area-wrapper"><textarea id="message" name="message" placeholder="Start typing here..." maxlength="5000" data-name="message" autofocus="true" class="textarea w-input"></textarea>
+    <div class="send-button-wrapper" (click)="sendMessage()"><input type="submit" value="Send" data-wait="Please wait..." class="submit-button w-button"></div>
+  </form>
+</div>

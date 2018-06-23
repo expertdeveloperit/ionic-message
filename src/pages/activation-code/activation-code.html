@@ -1,0 +1,22 @@
+
+  <div class="app-main-views-wrapper start">
+    <div class="app-view-header-wrapper">
+      <div class="status-bar-placeholder"></div>
+      <div class="header-button-wrapper"><a routerLink="" class="buttons phone w-inline-block"></a>
+        <div class="logo-text">msg</div><a routerLink="/terms-n-policy" class="buttons legal w-inline-block"></a></div>
+      <div class="stack-wrapper">
+        <div class="stack-1"></div>
+        <div class="stack-2"></div>
+      </div>
+    </div>
+    <div class="app-view-body">
+      <div class="sign-in-block w-form">
+        <form id="email-form" name="email-form" data-name="Email Form" class="sign-in-form">
+          <div class="section-title">security code</div>
+          <div class="phone-number-wrapper"><input type="password" class="sign-in-field number w-input" maxlength="256" autofocus="true" name="activation-code" data-name="activation code" id="activation-code" required=""></div>
+          <div class="tips">We sent you a security code to verify the phone number you provided.</div>
+          <div class="send-button-wrapper" (click)="login()"><input type="submit" value="Next" data-wait="Please wait..." class="submit-button grey w-button"></div>
+        </form>
+      </div>
+    </div>
+  </div>
